@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'http://rubygems.org/'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -9,6 +9,8 @@ gem 'sqlite3'
 gem 'coffee-script'
 gem 'yui-compressor', :require => 'yui/compressor'
 gem 'sass'
+gem "eventmachine", "1.0.0.beta.4.1"
+gem "win32-open3-19", :platforms => :mingw
 
 group :development do
   gem 'rspec-rails', '2.6.1'
@@ -18,7 +20,7 @@ group :development do
   gem 'rb-fchange', :require => false
   gem 'guard-livereload'
   gem 'growl'
-  
+  gem 'annotate', '~> 2.4.1.beta'
 end
 
 group :test do
@@ -26,7 +28,7 @@ group :test do
   gem 'webrat', '0.7.1'
   gem 'autotest', '4.4.6'
   gem 'autotest-rails-pure', '4.1.2'
-  gem 'autotest-fsevent', '0.2.4'
+  # gem 'autotest-fsevent', '0.2.4'
   gem 'autotest-growl', '0.2.16'
 end
 
